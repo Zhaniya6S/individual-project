@@ -27,17 +27,12 @@
         padding: 20px;
         background-color: var(--yelow-color);
     }
-    header button{
-        background-color: var(--yelow-color);
-        padding: 20px 10px;
-        border-radius: 5px;
-    }
     </style>
 </head>
 <body>
     <!--Navigation 1-->
     <!--Inline-->
-    <nav class="nav1" style="color: rgb(89, 15, 15); text-align: center; padding: 20px; font-size: 20px; background-color: var(--red-color); width: 100%;" id="discount">
+    <nav class="nav1" style="position: fixed; z-index: 1000; color: rgb(89, 15, 15); text-align: center; padding: 20px; font-size: 20px; background-color: var(--red-color); width: 100%;" id="discount">
         <b>-30% на коллекцию кед и кросовок</b>
     </nav>
     <hr>
@@ -60,7 +55,7 @@
         <i class="fa-sharp fa-regular fa-heart" class="choosen"></i>
         <i class="fa-solid fa-cart-shopping" class="buy"></i>
         <i class="fa-solid fa-user" class="autorisation"></i>
-        <button>Обратная связь</button><hr>
+        <button class="feedback">Обратная связь</button><hr>
     </header>
     <hr>
     <!--Naviganion 2-->
@@ -73,8 +68,11 @@
         <a href="#" class="nav2">Распродажа</a>
     </nav>
     <hr>
-    <main>
-        <!--Section 1-->
+        <div class="bg-image">
+            <div class="overlay"></div>
+            <div class="overlay-text"><h2>Освежите свой гардероб с нашей новой коллекцией</h2></div>
+        </div> 
+         <!--Section 1--> 
         <section class="section1">
             <div class="category">
                 <h1 style="color: goldenrod; font-size: 50px ;">Категории</h1>
@@ -170,6 +168,7 @@
                 <img src="https://i.pinimg.com/736x/83/a3/8f/83a38fd33567f2618adf6492c857d5a1.jpg" alt="" class="image-section">
                 <button class="section-btn">Плащи и куртки Зима-осень</button>
             </div>
+        </div>
         </section>
         <!--Section 2-->
         <h1 style="text-align: center;" id="product">Популярное</h1>
@@ -230,7 +229,7 @@
             <h3>Наша цель</h3>
             <p>Мы стремимся быть вашим первым выбором при покупке одежды онлайн. Наша цель - не просто продавать товары, а создавать удивительный опыт шопинга для каждого клиента.</p>
             <h4>Присоединяйтесь к нам в путешествии по миру стиля и комфорта. Будьте модными с нами!</h4>
-            <button>Подробнее</button>
+            <button  class="more">Подробнее</button>
             </div>
             <div class="reviews">
                 <ul>
@@ -248,31 +247,33 @@
                 <i class="fa-solid fa-user">Игорь, 30 лет</i>
                 <li>Нравится, что здесь всегда есть что-то новенькое. Отличный выбор трендовых вещей. Заказывал куртку и не пожалел - стильная, удобная и к тому же по приятной цене. Обязательно вернусь за еще одним обновлением гардероба!</li> 
                 </ul>
-                <button>Читать далее...</button> 
-            </div>
+                <button class="readmore">Читать далее...</button> 
+          
         </section>
         <hr>
-    </main>
         <!--Footer-->
         <footer>
             <div class="application">
-                <h1 style="color:rgb(113, 19, 19);">Оставьте заявку</h1><br>
-                Оставьте заявку и наши специалисты свяжутся с нами.<br>
-                <button class="button-application">Оставьте заявку</button><br>
+                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo1">
+                <div class="application2">
+                    <h1 style="color:rgb(113, 19, 19);">Оставьте заявку</h1><br>
+                    Оставьте заявку и наши специалисты свяжутся с вами.<br>
+                    <button class="button-application">Оставьте заявку</button><br>
+                </div>
+                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo2">
             </div>
             <div class="address">
-                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo">
-                <div class="container">
-                    <div class="section">
-                        <table border="5">
+            <div class="container">
+                <div class="section">
+                    <table border="5">
                         <th id="contacts"><h3>Контакты</h3></th>
                         <th><h3>Информация</h3></th>
                         <th><h3>Поддержка</h3></th>
-                            <tr><td>Email: urban.com</td><td><a href="#">Условия использования</a></td><td><a href="#">Часто задаваемые вопросы</a></td> </tr>
-                            <tr><td>Телефон: +7(234)-34-21</td><td><a href="#">Политика конфиденциальности</a></td><td><a href="#">Обратная связь</a></td></tr>
-                </table>
+                        <tr><td>Email: urban.com</td><td><a href="#">Условия использования</a></td><td><a href="#">Часто задаваемые вопросы</a></td></tr>
+                        <tr><td>Телефон: +7(234)-34-21</td><td><a href="#">Политика конфиденциальности</a></td><td><a href="#">Обратная связь</a></td></tr>
+                    </table>
                 </div>
-                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo">
+            </div></div>
         </footer>
         <hr>
         <!--Navigation 3-->
@@ -284,7 +285,7 @@
             <i class="fa-brands fa-twitter"></i>
         </nav><hr>
         <div class="copyright">
-            <p>2023 Urban. Все права защищены.</p>
+            <p style="color: white;">2023 Urban. Все права защищены.</p>
         </div>
     </container>
 </body>
