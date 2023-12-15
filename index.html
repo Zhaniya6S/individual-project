@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The shop</title>
+    <!--External-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts connection-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400&family=Dosis:wght@500&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia&family=Lato:ital,wght@0,100;1,100&family=Montserrat&display=swap" rel="stylesheet">
+    <!--Font awesome connection-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    /*Embedded*/
+    i{
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+    .nav2{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        background-color: var(--yelow-color);
+    }
+    header button{
+        background-color: var(--yelow-color);
+        padding: 20px 10px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <!--Navigation 1-->
+    <!--Inline-->
+    <nav class="nav1" style="color: rgb(89, 15, 15); text-align: center; padding: 20px; font-size: 20px; background-color: var(--red-color); width: 100%;" id="discount">
+        <b>-30% на коллекцию кед и кросовок</b>
+    </nav>
+    <hr>
+    <!--Header-->
+    <header id="header" id="main">
+        <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo" class="logo">
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#aboutcompany">О нас</a></li>
+            <li><a href="#discount">Акции</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div>
+            <form>
+                <input type="text" placeholder="Искать здесь..." class="search">
+                <button type="submit" class="submit"></button>
+            </form>
+        </div>
+        <i class="fa-sharp fa-regular fa-heart" class="choosen"></i>
+        <i class="fa-solid fa-cart-shopping" class="buy"></i>
+        <i class="fa-solid fa-user" class="autorisation"></i>
+        <button>Обратная связь</button><hr>
+    </header>
+    <hr>
+    <!--Naviganion 2-->
+    <nav class="nav2">
+        <a href="#" class="nav2">NEW</a>
+        <a href="#" class="nav2">Для женшин</a>
+        <a href="#" class="nav2">Для мужчин</a>
+        <a href="#" class="nav2">Для детей</a>
+        <a href="#" class="nav2">Магазины</a>
+        <a href="#" class="nav2">Распродажа</a>
+    </nav>
+    <hr>
+    <main>
+        <!--Section 1-->
+        <section class="section1">
+            <div class="category">
+                <h1 style="color: goldenrod; font-size: 50px ;">Категории</h1>
+                <a href="#" class="section1">Одежда</a><hr>
+                <a href="#" class="section1">Обувь</a><hr>
+                <a href="#" class="section1">Аксессуры</a><hr>
+                <a href="#" class="section1">Нижнее бельё</a><hr><br>
+                <h2 style="margin-top: 20px;">Ваш выбор</h2>
+                <select id="catalog">
+                    <option>Наличие в магазинах</option>
+                    <option>Есть</option>
+                    <option>Нет</option>
+                </select><br>
+                <select>
+                    <option>Тип</option>
+                    <option>Повседневная</option>
+                    <option>Деловой или классичсеский</option>
+                    <option>Романтический</option>
+                    <option>Кэжуал</option>
+                    <option>Спортивный</option>
+                    <option>Нижнее бельё</option>
+                    <option>Плюс сайз</option>
+                </select><br>
+                <select>
+                    <option>Сезон</option>
+                    <option>Базовая коллекция</option>
+                    <option>Весенне-летняя коллекция</option>
+                    <option>Осенне-зимняя коллекция</option>
+                    <option>Праздничная коллекция</option>
+                    <option>Спортивная коллекция</option>
+                    <option>Коллекция среди сезона</option>
+                </select><br>
+                <select id="price">
+                    <option>Цена</option>
+                    <option>Бюджетные цены</option>
+                    <option>Средние цены</option>
+                    <option>Премиум цены</option>
+                </select><br>
+                <select>
+                    <option>Размер</option>
+                    <option>Стандартные размеры</option>
+                    <option>Европейские размеры</option>
+                    <option>Британские размеры</option>
+                    <option>Международные размеры</option>
+                    <option>Размеры для плюс-сайз</option>
+                    <option>Детские размеры</option>
+                    <option>Размеры обуви</option>
+                    <option>Материнские размеры (для беременных)</option>
+                </select><br>
+                <select>
+                    <option>Материал</option>
+                    <option>Хлопок</option>
+                    <option>Лён</option>
+                    <option>Шерсть</option>
+                    <option>Шёлк</option>
+                    <option>Полиэстер</option>
+                    <option>Нейлон</option>
+                    <option>Эластан</option>
+                    <option>Деним</option>
+                    <option>Микрофибра</option>
+                    <option>Мериносовая шерсть</option>
+                    <option>Вискоза</option>
+                    <option>Трикотаж</option>
+                </select><br>
+                <select>
+                    <option>Цвет</option>
+                    <option>Минималистский</option>
+                    <option>Пастельные оттенки</option>
+                    <option>Нейтральные оттенки</option>
+                    <option>Яркие и насыщенные оттенки</option>
+                    <option>Тёмные и тёплые оттенки</option>
+                    <option>Сезонные цветовые палитры</option>
+                    <option>Градиенты и переходы</option>
+                </select><br>
+            </div>
+            <div class="section-div">
+                <img src="https://i.pinimg.com/736x/d6/0a/54/d60a544f4f1385066db271492fb0e407.jpg" alt="" class="image-section">
+                <button class="section-btn">Вечерние платья на выход</button>
+            </div>
+            <div class="section-div">
+                <img src="https://i.pinimg.com/564x/92/87/10/9287101f25abaacbc7788ef1226c411c.jpg" alt="" class="image-section">
+                <button class="section-btn">Мужские костюмы на вечер</button>
+            </div>
+            <div class="section-div">
+                <img src="https://i.pinimg.com/564x/34/d9/ec/34d9ecd129f6c8b60facb1874e6e5ad1.jpg" alt="" class="image-section">
+                <button class="section-btn">Верхняя одежда весна</button>
+            </div> 
+            <div class="section-div">
+                <img src="https://i.pinimg.com/564x/4d/68/5a/4d685a559f5197f651df787c67fd8bfd.jpg" alt="" class="image-section">
+                <button class="section-btn">Летние платья</button>
+            </div>
+            <div class="section-div">
+                <img src="https://i.pinimg.com/736x/83/a3/8f/83a38fd33567f2618adf6492c857d5a1.jpg" alt="" class="image-section">
+                <button class="section-btn">Плащи и куртки Зима-осень</button>
+            </div>
+        </section>
+        <!--Section 2-->
+        <h1 style="text-align: center;" id="product">Популярное</h1>
+        <section class="section2">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="image-section2">
+                <img src="https://i.pinimg.com/564x/cf/8b/d9/cf8bd9405f483e4c1dd39cfb66809b21.jpg" alt="dress" class="woman"><br>
+                <i class="fa-sharp fa-regular fa-heart" class="favorites"></i>
+                <button class="image-button">- 10%</button>
+                <s>16 200</s><p>14 580 т</p>
+                <p>Платье</p>
+            </div>
+            <div class="image-section2">
+                <img src="https://i.pinimg.com/564x/34/f0/00/34f0008dfa1dbb57f2947c231c5b107f.jpg" alt="t-shirt"  class="woman"><br>
+                <i class="fa-sharp fa-regular fa-heart" class="favorites"></i>
+                <button class="image-button">- 10%</button>
+                <s>16 200</s><p>14 580 т</p>
+                <p>Футболка</p>
+            </div>
+            <div class="image-section2">
+                <img src="https://i.pinimg.com/564x/87/bf/59/87bf5906536e4c790f919681f2fc3ba2.jpg" alt="sweater" class="woman"><br>
+                <i class="fa-sharp fa-regular fa-heart" class="choosen"></i>
+                <button class="image-button">- 10%</button>
+                <s>16 200</s><p>14 580 т</p>
+                <p>Свитер</p>
+            </div>
+            <div class="image-section2">
+                <img src="https://i.pinimg.com/564x/26/24/da/2624da54145c431f8b357ebaacd3d648.jpg" alt="jeans" class="woman"><br>
+                <i class="fa-sharp fa-regular fa-heart" class="choosen"></i>
+                <button class="image-button">- 10%</button>
+                <s>16 200</s><p>14 580 т</p>
+                <p>Джинсы</p>
+            </div>
+            <div class="image-section2">
+                <img src="https://i.pinimg.com/564x/b7/86/8e/b7868e339a227951bf0e0acfd2b9f331.jpg" alt="sneakers" class="woman"><br>
+                <i class="fa-sharp fa-regular fa-heart" class="choosen"></i>
+                <button class="image-button">- 10%</button>
+                <s>16 200</s><p>14 580 т</p>
+                <p>Кросовки</p>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </section>
+        <!--Section 3-->
+        <section class="section3">
+            <div class="aboutcompany" id="aboutcompany">
+            <h1 style="color: goldenrod;">О компании</h1>
+            <p>Добро пожаловать в мир стиля и удобства! Мы - ваш надежный партнер в области моды, представляющий уникальный интернет-магазин одежды, где каждая деталь имеет значение. Давайте расскажем вам немного больше о нашей компании.</p>
+            <h3 style="color: goldenrod;">Наша миссия</h3>
+            <p>В основе нашей деятельности лежит стремление сделать моду доступной для каждого. Мы верим, что стиль не должен быть жертвой бюджета, поэтому предлагаем широкий ассортимент модной одежды по доступным ценам.</p>
+            <ol>
+                <h3>Что нас отличает</h3>
+                <li>Трендовые коллекции: Мы тщательно отбираем коллекции, чтобы предоставить нашим клиентам самые актуальные и стильные вещи сезона. Наши дизайнеры следят за последними трендами, чтобы вы всегда были в центре внимания.</li>
+                <li>Качество без компромиссов: Мы уделяем особое внимание качеству наших товаров. Каждая деталь проходит строгий контроль, чтобы убедиться, что вы получаете продукцию, которая сочетает в себе стиль и долговечность.</li>
+                <li>Разнообразие размеров и стилей: Мы гордимся тем, что предлагаем широкий диапазон размеров, чтобы каждый клиент мог найти что-то подходящее. Наш ассортимент включает разнообразие стилей, подчеркивая уникальность каждой личности.</li>
+            </ol>
+            <h3>Наш сервис</h3>
+            <p>Мы ценим каждого клиента и стремимся предоставить опыт покупок, который оставит приятные воспоминания. Наша команда поддержки готова помочь вам в любой ситуации, обеспечивая высокий уровень обслуживания.</p>
+            <h3>Наша цель</h3>
+            <p>Мы стремимся быть вашим первым выбором при покупке одежды онлайн. Наша цель - не просто продавать товары, а создавать удивительный опыт шопинга для каждого клиента.</p>
+            <h4>Присоединяйтесь к нам в путешествии по миру стиля и комфорта. Будьте модными с нами!</h4>
+            <button>Подробнее</button>
+            </div>
+            <div class="reviews">
+                <ul>
+                <h1>Отзывы</h1><br>
+                <i class="fa-solid fa-user">Анна, 28 лет</i>
+                <li>Просто в восторге от магазина! Заказывала здесь несколько вещей, и все они превзошли мои ожидания. Качество материалов на высоте, размеры соответствуют заявленным, а доставка была очень быстрой. Уже выбираю следующий наряд!</li>
+                <i class="fa-solid fa-user">Алексей, 35 лет</i>
+                <li>Очень доволен выбором этого магазина. Отличное соотношение цены и качества. Заказывал здесь рубашки и брюки - все отлично подошло по размеру, и после стирки осталось в прекрасном состоянии. Рекомендую!</li> 
+                <i class="fa-solid fa-user">Екатерина, 22 года</i>
+                <li>Мой любимый онлайн-магазин! Тут всегда можно найти что-то стильное и по своему вкусу. Одежда супермодная, цены приятно удивляют, а акции и скидки делают шопинг еще приятнее. Буду заказывать здесь еще и еще!</li> 
+                <i class="fa-solid fa-user">Дмитрий, 40 лет</i>
+                <li>Очень хороший выбор классической одежды для мужчин. Заказывал здесь костюм и рубашку для офиса. Качество идеальное, а цены весьма разумные. Обслуживание на высоком уровне. Буду рекомендовать друзьям и коллегам.</li>  
+                <i class="fa-solid fa-user">Людмила, 25 лет</i>
+                <li>Отличный сервис! Заказала платье для особого случая, и оно просто сказочное. Доставка была очень оперативной, а качество материалов порадовало. Теперь этот магазин в списке моих фаворитов.</li>  
+                <i class="fa-solid fa-user">Игорь, 30 лет</i>
+                <li>Нравится, что здесь всегда есть что-то новенькое. Отличный выбор трендовых вещей. Заказывал куртку и не пожалел - стильная, удобная и к тому же по приятной цене. Обязательно вернусь за еще одним обновлением гардероба!</li> 
+                </ul>
+                <button>Читать далее...</button> 
+            </div>
+        </section>
+        <hr>
+    </main>
+        <!--Footer-->
+        <footer>
+            <div class="application">
+                <h1 style="color:rgb(113, 19, 19);">Оставьте заявку</h1><br>
+                Оставьте заявку и наши специалисты свяжутся с нами.<br>
+                <button class="button-application">Оставьте заявку</button><br>
+            </div>
+            <div class="address">
+                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo">
+                <div class="container">
+                    <div class="section">
+                        <table border="5">
+                        <th id="contacts"><h3>Контакты</h3></th>
+                        <th><h3>Информация</h3></th>
+                        <th><h3>Поддержка</h3></th>
+                            <tr><td>Email: urban.com</td><td><a href="#">Условия использования</a></td><td><a href="#">Часто задаваемые вопросы</a></td> </tr>
+                            <tr><td>Телефон: +7(234)-34-21</td><td><a href="#">Политика конфиденциальности</a></td><td><a href="#">Обратная связь</a></td></tr>
+                </table>
+                </div>
+                <img src="https://i.ibb.co.com/L08gjxb/online-shop-logo-12-removebg-preview.png" alt="online-shop-logo-12-removebg-preview" class="logo">
+        </footer>
+        <hr>
+        <!--Navigation 3-->
+        <nav class="socmedia">
+            <i class="fa-brands fa-vk"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </nav><hr>
+        <div class="copyright">
+            <p>2023 Urban. Все права защищены.</p>
+        </div>
+    </container>
+</body>
+</html>
