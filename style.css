@@ -82,11 +82,22 @@ form {
 .feedback{
     background-color: var(--yelow-color);
     padding: 20px 10px;
-    border-radius: 5px;
     margin: 10px;
     font-size: large;
     color: rgb(89, 15, 15);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px #333;
 } 
+.feedback:hover{
+    background-color: var(--yelow-color);
+}
+.feedback:active{
+    background-color:rgb(178, 132, 94);;
+    box-shadow: 0 5px #242424;
+    transform: translateY(4px);
+}
 .icons {
     display: flex;
     align-items: center;
@@ -201,6 +212,9 @@ select {
     margin-bottom: 20px;
     max-width: 300px;
 }
+.image-section2:hover{
+    background-color: var(--red-color);
+}
 .woman{
     width: 230px;
     height:320px;
@@ -219,7 +233,7 @@ select {
   cursor: pointer;
   border-radius: 5px;
 }
-section .fa-sharp{
+.section2 .fa-sharp{
     position: absolute;
     top: 30px;
     left: 10px;
@@ -231,7 +245,6 @@ section .fa-sharp{
     text-align: center;
     border-radius: 5px;
 }
-
 .fa-sharp:hover{
     color: var(--red-color);
     width: 35px;
@@ -244,8 +257,15 @@ section .fa-sharp{
     cursor: pointer;
     margin: 150px 20px; /* Добавляем отступы между значками и картинками */
 }
+.section2 .fa-solid:hover{
+    background-color: var(--red-color);
+    color: var(--brown-color);
+}
 .section2 p{
     color: white;
+}
+.section2 i{
+    color: rgb(53, 7, 7); 
 }
 /* Section3 */
 .section3 {
@@ -287,23 +307,25 @@ section p{
 .reviews li{
     list-style: none;
 }
-.more{
-    background-color: var(--yelow-color);
-}
-.more:hover{
-    background-color: var(--red-color);
-}
-.readmore{
-    background-color: var(--red-color);
-}
-.readmore:hover{
-    background-color: var(--yelow-color);
-}
 .more,
 .readmore{
+    background-color: var(--red-color);
     margin-top: 10px;
     padding: 20px 10px;
     border-radius: 5px;
+    font-size: large;
+}
+.more:active{
+    background-color: rgb(159, 75, 75);
+    box-shadow: 0 5px #5b2525;
+    transform: translateY(4px);
+    color: #fff;
+}
+.readmore:active{
+    background-color: rgb(159, 75, 75);
+    box-shadow: 0 5px #5b2525;
+    transform: translateY(4px); 
+    color: #fff;
 }
 /* Footer */
 footer {
@@ -340,13 +362,35 @@ footer a{
 footer h1, h3{
     color: aliceblue;
 }
-.button-application {
-    background-color: rgb(115, 80, 66);
+.button-application { 
+    position: relative;
+    background-color: var(--brown-color);
     color: #fff;
     margin-top: 20px;
     padding: 20px 10px;
     border-radius: 10px;
     font-size: larger;
+    transition-duration: 0.4s;/*Продолжительность анимации*/
+    overflow: hidden;/*Переполнение скрыто*/
+    cursor: pointer;
+}
+.button-application:after{
+    content: "";
+    background: lightsalmon;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button-application:active::after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 .container {
     display: flex;
