@@ -158,12 +158,19 @@ header i:hover{
     text-decoration: none;
     font-size: larger;
 }
+.category {
+    flex: 1; /* Занимает доступное пространство на экране */
+    max-width: 300px; /* Ограничивает ширину блока для более читаемого текста на мобильных устройствах */
+    margin-right: 20px;
+}
 select{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: var(--brown-color);
+    color: white;
+    margin: 10px;
     background-size: 200px;
     padding: 10px;
     border: 1px solid white;
+    font-size: 18px;
 }
 
 .image-section {
@@ -171,13 +178,12 @@ select{
     height: 500px;
     margin: 5px;
 }
-
 .section-div {
     position: relative;
     width: 30%;
     margin-bottom: 20px;
 }
-
+/*Animate button*/
 .section-btn {
     position: absolute;
     bottom: 10%;
@@ -185,25 +191,41 @@ select{
     transform: translateX(-50%);
     background-color: #555;
     color: white;
-    font-size: 16px;
-    padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px; 
     z-index: 1;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    transition: all 0.5s;
 }
-select {
-    background-color: rgb(115, 80, 66);
-    color: white;
+.section-btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
-
+.section-btn span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.section-btn:hover span{
+    padding-right: 25px;
+}
+.section-btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
 /* Section2 */
 .section2 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
 }
 .image-section2{
     display: inline-block;
@@ -268,11 +290,9 @@ select {
     color: rgb(53, 7, 7); 
 }
 /* Section3 */
-.section3 {
-    display: flex;
-    margin: 20px;
-    padding: 20px; 
-    clear: both; 
+.section3 { 
+    display: flex;    
+    justify-content: space-between;
 }
 .section3 h1{
     color: goldenrod;
@@ -436,36 +456,62 @@ table td {
 /*Adaptive*/
 /* Tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
+    .bg-image{
+        display: grid;
+        width: 100%;
+    }
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
     .nav2 {
-        flex-direction: column; /* Изменение на вертикальное расположение для более маленьких экранов */
-        text-align: center; /* Центрирование текста в вертикальной компоновке */
+        flex-direction: column;
+        text-align: center; 
+        width: 100%;
     }
     nav.main {
-        grid-column: span 2; /* Растягиваем навигацию на две колонки */
+        grid-column: span 2;
     }
-
     .search {
         width: 100%;
     }
-
     .icons {
-        grid-row: 2; /* Переносим иконки во вторую строку */
+        grid-row: 2; 
     }
-
     .section1,
     .section2,
     .section3 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+    }
+    .section1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .category {
+        max-width: none; 
+        margin-right: 0;
+    }
+    .section-div {
+        flex: 0 0 48%; 
+    }
+    .section2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-section2 {
+        flex: 0 0 48%; 
+        margin-bottom: 20px;
+    }
+    .section3 {
+        flex-direction: column;
     }
 }
-
 /* Mobile */
 @media (max-width: 768px) and (min-width: 320px) {
     header {
@@ -473,25 +519,34 @@ table td {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        width: 100%;
     }
-
     .nav2 {
-        flex-direction: column; /* Изменение на вертикальное расположение для более маленьких экранов */
-        text-align: center; /* Центрирование текста в вертикальной компоновке */
+        flex-direction: column; /* Изменение на вертикальное расположение*/
+        text-align: center;
+        width: 100%;
     }
     .search {
         width: 100%;
-    }
-
-    .icons {
-        grid-row: 2; /* Переносим иконки во вторую строку */
     }
     .section1,
     .section2,
     .section3 {
         flex-direction: column;
     }
+    .section1 {
+        flex-direction: column;
+        align-items: center; 
+    }
 
+    .category {
+        margin-right: 0;
+    }
+
+    .image-section2 {
+        flex:100%; /* Одна колонка на телефонах */
+        width: 100%;
+    }
     .application,
     .address {
         flex-direction: column;
@@ -505,5 +560,18 @@ table td {
 
     .socmedia i {
         margin: 10px;
+    }
+    .section3 {
+        flex-direction: column;
+    }
+
+    .aboutcompany,
+    .reviews {
+        width: 100%;
+        text-align: center;
+    }
+    .more,
+    .readmore {
+        width: 100%;
     }
 }
