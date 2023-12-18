@@ -25,6 +25,14 @@ header {
     background-color: var(--brown-color);   
     margin-top:50px;
 }
+.main{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.main li{
+    margin: 10px;
+}
 header ul {
     list-style: none;
     display: flex;
@@ -94,7 +102,7 @@ form {
 .feedback{
     background-color: var(--yelow-color);
     padding: 20px 10px;
-    margin: 10px;
+    margin-right: 50px;
     font-size: large;
     color: rgb(89, 15, 15);
     cursor: pointer;
@@ -564,6 +572,7 @@ table td {
     .feedback{
         width: 80%;
         margin-bottom: 30px;
+        margin-left: 60px;
     }
     .section2{
         justify-content: center;
