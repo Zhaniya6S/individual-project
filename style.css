@@ -33,15 +33,13 @@ header {
     flex-direction: row;
     list-style: none;
 }
-.main li{
-    margin: 10px;
-}
-header a {
+
+.main a {
     text-decoration: none;
-    color: #333;
     font-weight: bold;
     color: white;
-    font-size: larger;
+    margin: 10px;
+    font-size: 20px;
 }
 .logo{
     position: relative;
