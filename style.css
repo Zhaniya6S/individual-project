@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*Global Settings*/
 :root{
     --brown-color:rgb(115, 80, 66);
     --yelow-color:rgb(206, 153, 109);
     --red-color:rgb(219, 108, 108);
     }
+
 /* Body */
 body {
     background-color: var(--brown-color);
@@ -17,6 +19,7 @@ body {
 hr{
     border: 1px solid white;
 }
+
 /* Header */
 header {
     display: flex;
@@ -32,13 +35,6 @@ header {
 }
 .main li{
     margin: 10px;
-}
-header ul {
-    list-style: none;
-    display: flex;
-}
-header ul li {
-    margin: 20px;
 }
 header a {
     text-decoration: none;
@@ -109,6 +105,7 @@ form {
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 8px #333;
+    margin-bottom: 10px;
 } 
 .feedback:hover{
     background-color: var(--yelow-color);
@@ -168,6 +165,7 @@ header i:hover{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     z-index: 3;
 }
+
 /* Section1 */
 .section1 {
     display: flex;
@@ -182,7 +180,6 @@ header i:hover{
     font-size: larger;
 }
 .category {
-    flex: 1; 
     max-width: 300px;
     margin-right: 20px;
 }
@@ -195,7 +192,6 @@ select{
     border: 1px solid white;
     font-size: 18px;
 }
-
 .image-section {
     width: 400px;
     height: 500px;
@@ -312,6 +308,7 @@ select{
 .section2 i{
     color: rgb(53, 7, 7); 
 }
+
 /* Section3 */
 .section3 { 
     display: flex;    
@@ -370,6 +367,7 @@ section p{
     transform: translateY(4px); 
     color: #fff;
 }
+
 /* Footer */
 footer {
     background-color: var(--yelow-color);
@@ -390,6 +388,7 @@ footer {
     align-items: center;
     margin: 20px 0;
 }
+/*Animation*/
 .logo1{
     position: relative;
     animation: moveLogo1 1s ease-in-out infinite alternate; 
@@ -471,7 +470,8 @@ table {
 table td {
     width: auto;
 }
-  /* Navigation 3 */
+
+/* Navigation 3 */
   .socmedia {
     text-align: center;
     padding: 20px;
@@ -495,6 +495,7 @@ table td {
     margin: 15px;
     background-color: var(--brown-color);
   }
+  
 /*Adaptive*/
 /* Tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
