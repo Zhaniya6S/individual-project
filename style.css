@@ -286,19 +286,12 @@ select{
 }
 .fa-sharp:hover{
     color: var(--red-color);
-    width: 35px;
-    height: 35px;
-    text-align: center;
 }
 .section2 .fa-solid {
     font-size: 2rem;
     color: white;
     cursor: pointer;
     margin: 150px 20px;
-}
-.section2 .fa-solid:hover{
-    background-color: var(--red-color);
-    color: var(--brown-color);
 }
 .section2 p{
     color: white;
