@@ -189,11 +189,12 @@ select{
     padding: 10px;
     border: 1px solid white;
     font-size: 18px;
+    width: 300px;
 }
 .image-section {
     width: 400px;
     height: 500px;
-    margin: 5px;
+
 }
 .section-div {
     position: relative;
@@ -243,6 +244,7 @@ select{
 .section2 {
     display: flex;
     justify-content: space-between;
+    margin: 20px;
 }
 .image-section2{
     display: inline-block;
@@ -252,7 +254,7 @@ select{
     max-width: 300px;
 }
 .image-section2:hover{
-    background-color: var(--red-color);
+    background-color:rgb(85, 59, 49);
 }
 .woman{
     width: 230px;
@@ -286,12 +288,19 @@ select{
 }
 .fa-sharp:hover{
     color: var(--red-color);
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
 .section2 .fa-solid {
     font-size: 2rem;
     color: white;
     cursor: pointer;
     margin: 150px 20px;
+}
+.section2 .fa-solid:hover{
+    background-color: var(--red-color);
+    color: var(--brown-color);
 }
 .section2 p{
     color: white;
@@ -500,6 +509,7 @@ table td {
         width: 100%;
 	    grid-column-gap: 10px;
 	    grid-row-gap: 10px;
+        padding: 20px;
     }
     .nav2 {
         flex-direction: column;
@@ -540,14 +550,12 @@ table td {
     .bg-image{
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        width: 100%;
     }
     .nav2 {
         display: flex;
