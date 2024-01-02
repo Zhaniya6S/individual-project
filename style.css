@@ -21,19 +21,15 @@ hr{
 }
 
 /* Header */
-header {
+.main{
     display: flex;
+    flex-direction: row;
+    list-style: none;    
     align-items: center;
     justify-content: space-between;
     background-color: var(--brown-color);   
     margin-top:50px;
 }
-.main{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
 .main a {
     text-decoration: none;
     font-weight: bold;
@@ -369,7 +365,7 @@ section p{
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: var(--yelow-color);
     color: #fff;
     padding: 10px;
@@ -502,7 +498,7 @@ table td {
     .bg-image{
         width: 100%;
     }
-    header {
+    .main{
         display: grid;
         align-items: center;
         justify-content: center;
@@ -551,7 +547,7 @@ table td {
         display: flex;
         flex-direction: column;
     }
-    header {
+    .main{
         display: flex;
         align-items: center;
         justify-content: space-between;
