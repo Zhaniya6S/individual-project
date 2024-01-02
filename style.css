@@ -21,7 +21,7 @@ hr{
 }
 
 /* Header */
-.main{
+header {
     display: flex;
     flex-direction: row;
     list-style: none;    
@@ -30,7 +30,12 @@ hr{
     background-color: var(--brown-color);   
     margin-top:50px;
 }
-.main a {
+.main{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+header a {
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -498,7 +503,7 @@ table td {
     .bg-image{
         width: 100%;
     }
-    .main{
+    header {
         display: grid;
         align-items: center;
         justify-content: center;
@@ -522,8 +527,7 @@ table td {
         grid-template-columns: repeat(3, 2fr);
     }
     
-    .section1 {
-        display: flex;
+	@@ -531,27 +527,27 @@
         flex-direction: column; 
         align-items: center; 
     }
@@ -540,14 +544,13 @@ table td {
         width: 100%;
         margin-bottom: 30px;
     }
-}
 /* Mobile */
 @media (max-width: 768px) and (min-width: 320px) {
     .bg-image{
         display: flex;
         flex-direction: column;
     }
-    .main{
+    header {
         display: flex;
         align-items: center;
         justify-content: space-between;
